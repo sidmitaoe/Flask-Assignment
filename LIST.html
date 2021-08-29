@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+    <title>Title</title>
+</head>
+<body>
+    <table border="1">
+        <thead>
+            <td>Name</td>
+            <td>Address</td>
+            <td>City</td>
+            <td>Pin Code</td>
+
+        </thead>
+            {% for row in rows %}
+            <tr>
+                <td>{{row['name']}}</td>
+                <td>{{row['addr']}}</td>
+                <td>{{row['city']}}</td>
+                <td>{{row['pin']}}</td>
+                
+            </tr>
+            {% endfor %}
+
+    </table>
+    <a href="/">Go to Home Page</a><br><br>
+</body>
+</html>
